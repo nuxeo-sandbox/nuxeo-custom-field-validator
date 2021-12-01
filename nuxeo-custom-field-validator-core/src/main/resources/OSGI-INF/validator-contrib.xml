@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.labs.sample.validator">
+    <extension point="resolvers" target="org.nuxeo.ecm.core.schema.ObjectResolverService">
+        <resolver class="org.nuxeo.labs.sample.validator.CustomStringValidator" type="customStringValidator"/>
+    </extension>
+</component>

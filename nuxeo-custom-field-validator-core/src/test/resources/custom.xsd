@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:ref="http://www.nuxeo.org/ecm/schemas/core/external-references/"
+           targetNamespace="http://www.nuxeo.org/ecm/project/schemas/test">
+
+    <xs:element name="my_string">
+        <xs:simpleType>
+            <xs:restriction base="xs:string" ref:resolver="customStringValidator" ref:max="10" />
+        </xs:simpleType>
+    </xs:element>
+
+</xs:schema>
